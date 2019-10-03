@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+</body>
+<script>
+    var notas = new Array();
+    notas[0] = 3;
+    notas[1] = 7;
+    notas[2] = 8.5;
+    notas[3] = 9.1;
+    var i = 0;
+    var ciudades = ["Chihuahua", "Parral", "Juarez", "Tlaxcala"]; //Más usada
+    var autos = new Array("Kia", "Chevrolet", "BMW", "Lamborgini");
+    while(i < 4){
+        document.write("Nota " + (i + 1) + ": " + notas[i] + "<br/>");
+        document.write("Ciudad " + (i + 1) + ": " + ciudades[i] + "<br/>");
+        document.write("Auto " + (i + 1) + ": " + autos[i] + "<br/>");
+        i = i + 1;
+    }
+</script>
+</html>

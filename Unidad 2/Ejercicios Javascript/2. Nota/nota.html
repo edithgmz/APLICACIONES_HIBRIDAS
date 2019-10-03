@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nota</title>
+</head>
+<body>
+    <script>
+        //Declaración de variables
+        var nota;
+        //Pedir nota al cargar la página
+        nota = prompt("¿Cuál es tu nota (0-10)?");
+        //Mostrar alert con la calificación según sea el caso
+        if(nota < 3){
+            alert("Muy deficiente.");
+        } else if(nota < 5){
+            alert("Insuficiente.");
+        } else if (nota < 7) {
+            alert("Bien.");
+        } else if (nota < 9) {
+            alert("Notable.");
+        } else if (nota <= 10) {
+            alert("Sobresaliente.");
+        }
+    </script>
+</body>
+</html>

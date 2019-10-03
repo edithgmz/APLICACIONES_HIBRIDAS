@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fecha</title>
+</head>
+<body>
+    <script>
+        //Declaración de variables
+        var fecha, dia, mes, hora;
+        fecha = new Date();
+        //Obtener mes utilizando un arreglo
+        mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        //Obtener día utilizando un switch
+        switch(fecha.getDay()){
+            case 0:
+                dia = "domingo";
+                break;
+            case 1:
+                dia = "lunes";
+                break;
+            case 2:
+                dia = "martes";
+                break;
+            case 3:
+                dia = "miércoles";
+                break;
+            case 4:
+                dia = "jueves";
+                break;
+            case 5:
+                dia = "viernes";
+                break;
+            case 6:
+                dia = "sábado";
+                break;
+        }
+        //Agregar 0 en caso de que la hora tenga sólo un dígito
+        if(fecha.getHours() < 10){
+            hora = "0" + fecha.getHours();
+        }
+        //Escribir fecha en el documento
+        document.write("Hoy es " + dia + ", " + fecha.getDate() + " de " + mes[fecha.getMonth()] + " de " + fecha.getFullYear() + " y son las " + hora + ":" + fecha.getMinutes() + " horas.");
+    </script>
+</body>
+</html>

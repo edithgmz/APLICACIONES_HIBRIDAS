@@ -1,0 +1,19 @@
+body{
+    background: #f7f7f7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/*HEADER*/
+.cabecera{
+    background: #cccccc;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.boton{
+    font-weight: bold;
+    margin-top: 15px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Red Social</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!--Columna del logo-->
+                <div class="col-auto d-none d-md-block logo">
+                    <a href=""><img src="img/logo.png" alt=""></a>
+                </div>
+                <!--Columna barra de búsqueda-->
+                <div class="col-12 col-sm-8 col-lg-6 order-sm-1 buscar mb-2 mb-sm-0">
+                    <form action="">
+                        <div class="row no-gutters">
+                            <div class="col-10">
+                                <input type="text" name="" id="" placeholder="Amigos, Lugares y Cosas">
+                            </div>
+                            <div class="col-2">
+                                <button><i class="icon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--Columna navegación derecha-->
+                <nav class="col-12 col-sm-3 col-lg-2 order-1 order-sm-2 menu d-flex justify-content-between ml-auto mb-sm-0">
+                    <a href=""><i class="icon-users"></i></a>
+                    <a href=""><i class="icon-bell-alt"></i></a>
+                    <a href=""><i class="icon-chat"></i></a>
+                    <a href="" class="imagen"><img src="img/paisaje2.jpg" width="22" height="22" alt=""></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
+    <main class="container">
+        <div class="row">
+            <!--Barra lateral izquierda-->
+            <div class="col-md-2 barra-lateral-izquierda">
+                <nav>
+                    <a href=""><i class="icon-users"></i>Amigos</a>
+                    <a href=""><i class="icon-mail"></i>Mensajes privados</a>
+                    <a href=""><i class="icon-thumbs-up"></i>Páginas</a>
+                    <a href=""><i class="icon-play"></i>Vídeos</a>
+                    <a href=""><i class="icon-file-image"></i>Fotos</a>
+                    <a href=""><i class="icon-music"></i>Música</a>
+                    <a href=""><i class="icon-book"></i>Libros</a>
+                </nav>
+            </div>
+            <a href="" class="fondo-enlace d-md-none" id="fondo-enlace"></a>
+            <!--Contenido principal-->
+            <div class="col contenido-principal">
+                <div class="publicar">
+                    <!--Fila botón de menú en dispositivos móviles-->
+                    <div class="row">
+                        <div class="col">
+                            <!--Botón del menú en dispositivos móviles-->
+                            <a href="" class="btn-menu d-md-none d-flex justify-content-between" id="btn-menu">
+                                <span>Menú</span>
+                                <i class="icon-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Formulario de publicación-->
+                    <div class="row">
+                        <div class="col-auto foto">
+                            <a href=""><img src="img/persona2.jpg" alt=""></a>
+                        </div>
+                        <div class="col">
+                            <!--Formulario de la publicación-->
+                            <form action="">
+                                <textarea name="mensaje" id="" placeholder="Publicar Mensaje"></textarea>
+                                <div class="contenedor-botones d-flex justify-content-between">
+                                    <div class="media">
+                                        <a href=""><i class="icon-file-image"></i></a>
+                                        <a href=""><i class="icon-play"></i></a>
+                                        <a href=""><i class="icon-music"></i></a>
+                                    </div>
+                                    <div>
+                                        <button>Publicar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Publicación-->
+                <div class="publicaciones">
+                    <!--Post-->
+                    <div class="row">
+                        <div class="col-auto foto">
+                            <a href=""><img src="img/persona5.jpg" alt=""></a>
+                        </div>
+                        <div class="col">
+                            <div class="post">
+                                <a href="" class="nombre">Andrea Lorem Ipsum</a>
+                                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio doloremque fugit qui deserunt maxime! Accusamus suscipit nemo architecto est commodi facilis fugiat, odio, rerum dicta, ipsam ea consequuntur quod.</p>
+                                <div class="caja-botones d-flex justify-content-between align-items-center">
+                                    <button><i class="icon-thumbs-up"></i></button>
+                                    <p>15 <i class="icon-thumbs-up"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Comentarios-->
+                    <div class="row">
+                        <div class="col-10 offset-2">
+                            <div class="comentarios">
+                                <div class="row no-gutters comentario">
+                                    <div class="col-auto foto">
+                                        <a href=""><img src="img/persona2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <form action="">
+                                            <textarea name="" id="" placeholder="Comentario"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters comentario">
+                                    <div class="col-auto foto">
+                                        <a href=""><img src="img/persona1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <p class="respuesta">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dicta commodi amet? Ut quod aliquam, nobis
+                                            sunt quas laborum dignissimos excepturi quos officia quisquam dolorem cum suscipit, temporibus modi
+                                            incidunt?
+                                        </p>
+                                        <a href="" class="me-gusta">Me gusta</a>
+                                    </div>
+                                </div>
+                            </div>  
+                    </div>
+                </div>
+            </div>
+            <!--Barra lateral derecha-->
+            <div class="col-3 barra-lateral-derecha d-none d-lg-block">
+                <h3>Publicidad</h3>
+                <div class="ads">
+                    <a href=""><img src="img/ad1.jpg" alt="" width="300"></a>
+                    <a href=""><img src="img/ad2.jpg" alt="" width="300"></a>
+                    <a href=""><img src="img/ad3.jpg" alt="" width="300"></a>
+                </div>
+                <!--Footer-->
+                <footer>
+                    <a href="">Privacidad</a>
+                    <a href="">Condiciones</a>
+                    <a href="" class="copyright">Red Social 2019</a>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

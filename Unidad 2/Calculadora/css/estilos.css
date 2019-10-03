@@ -1,0 +1,95 @@
+*{ /*Valores generales*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+center{
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: teal;
+    color: whitesmoke;
+    font-weight: bold;
+    border: 5px solid #cccccc;
+    border-radius: 20px;
+}
+
+#calculadora{
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #aaaaaa;
+    border-radius: 20px;
+    background: #dddddd;
+}
+
+#operaciones{
+    position: relative;
+    margin: 20px auto;
+    width: 70%;
+    background: whitesmoke;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #999999;
+    padding: 10%;
+    text-align: right;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+#calculadora ul{
+    margin-left: 5px;
+}
+
+#calculadora ul li{
+    float: left;
+    padding: 32px;
+    width: 15px;
+    text-align: center;
+    margin: 8px;
+    background: whitesmoke;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #999999;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#calculadora ul li:hover{
+    background: teal;
+    color: whitesmoke;
+}
+
+#calculadora ul li:active{
+    background: crimson;
+    color: whitesmoke;
+}
+
+.borrar{
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 15px;
+    width: 60px;
+    background: crimson;
+    border-radius: 10px;
+    left: 150px;
+    border: 5px solid #bbbbbb;
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: center;
+}
+
+.borrar:hover{
+    background: purple;
+}
+
+.borrar:active{
+    background: teal;
+}

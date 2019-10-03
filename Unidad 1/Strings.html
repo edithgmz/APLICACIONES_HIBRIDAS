@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>String, Métodos y Propiedades</h1>
+</body>
+<script>
+    var texto = prompt("Introduzca texto:");
+    document.write("Su texto: <br/>");
+    document.write(texto + "<br/>");
+    document.write("<br/>Longitud: ".concat(texto.length));
+    document.write("<br/>En mayúsculas: " + texto.toUpperCase());
+    document.write("<br/>Primer caracter: " + texto.charAt(0));
+    document.write("<br/>Quinto caracter: " + texto.charAt(4));
+    document.write("<br/>Primera mitad del texto: " + texto.substring(0, texto.length/2));
+    document.write("<br/>Segunda mitad del texto: " + texto.substring(texto.length / 2));
+</script>
+
+</html>
