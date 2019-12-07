@@ -1,0 +1,60 @@
+<app-header titulo="List-Reorder"></app-header>
+
+<ion-content padding>
+  <ion-label>Icono default, items alineados derecha</ion-label>
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="onRenderItems($event)" disabled="false">
+      <ion-item *ngFor="let d of datos">
+        <ion-label>{{ d }}</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+  
+  <ion-label>Icono default, items alineados izquierda</ion-label>
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="onRenderItems($event)" disabled="false">
+      <ion-item *ngFor="let d of datos">
+        <ion-label>{{ d }}</ion-label>
+        <ion-reorder slot="start"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+  
+  <ion-label>Icono personalizado, items alineados derecha</ion-label>
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="onRenderItems($event)" disabled="false">
+      <ion-item *ngFor="let d of datos">
+        <ion-label>{{ d }}</ion-label>
+        <ion-reorder slot="end">
+          <ion-icon name="paw"></ion-icon>
+        </ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+
+  <ion-label>Icono personalizado, items alineados izquierda</ion-label>
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="onRenderItems($event)" disabled="false">
+      <ion-item *ngFor="let d of datos">
+        <ion-label>{{ d }}</ion-label>
+        <ion-reorder slot="start">
+          <ion-icon name="paw"></ion-icon>
+        </ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+  
+  <ion-label>Todo el elemento puede ser arrastrado</ion-label>
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="onRenderItems($event)" disabled="false">
+      <ion-item *ngFor="let d of datos">
+        <ion-reorder>
+          <ion-item>
+            <ion-label>{{ d }}</ion-label>
+          </ion-item>
+        </ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+</ion-content>

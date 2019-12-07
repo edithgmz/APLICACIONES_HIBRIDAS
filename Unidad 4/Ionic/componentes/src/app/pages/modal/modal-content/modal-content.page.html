@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ mtitu }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="modal-col" text-center>
+        Apellido Paterno
+      </ion-col>
+      <ion-col class="modal-col" text-center>
+        Apellido Materno
+      </ion-col>
+      <ion-col class="modal-col" text-center>
+        Nombre (s)
+      </ion-col>
+      <ion-col class="modal-col" text-center>
+        Apodo
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="modal-col" text-center>
+        {{ maPat }}
+      </ion-col>
+      <ion-col class="modal-col" text-center>
+        {{ maMat }}
+      </ion-col>
+      <ion-col class="modal-col" text-center>
+        {{ mnom }}
+      </ion-col>
+      <ion-col class="modal-col" text-center>
+        {{ mapodo }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button expand="block" (click)="closeModal()">Cerrar</ion-button>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Kitsu Anime
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionChange)="search($event)" (ionCancel)="cancelSearch($event)"
+                 (ionClear)="cancelSearch($event)" showCancelButton="focus"
+                 placeholder="Anime..."></ion-searchbar>
+  <app-animes *ngIf="buscar === ''" [animes]="animes"></app-animes>
+  <app-animes *ngIf="buscar !== ''" [animes]="animesName"></app-animes>
+  <ion-infinite-scroll *ngIf="buscar === ''" threshold="150px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="crescent">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

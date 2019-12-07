@@ -1,0 +1,86 @@
+<app-header titulo="Progress Bar y Range"></app-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Progress Bar
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label>Default</ion-label>
+      <ion-progress-bar></ion-progress-bar>
+      
+      <ion-label>Default con 50%</ion-label>
+      <ion-progress-bar value="0.5"></ion-progress-bar>
+      
+      <ion-label>Colores</ion-label>
+      <ion-progress-bar class="colores" color="primary" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="secondary" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="tertiary" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="success" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="warning" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="danger" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="light" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="medium" value="0.5"></ion-progress-bar>
+      <ion-progress-bar class="colores" color="dark" value="0.5"></ion-progress-bar>
+      <ion-progress-bar color="malu" value="0.5"></ion-progress-bar>
+      
+      <ion-label>Indeterminado</ion-label>
+      <ion-progress-bar type="indeterminate"></ion-progress-bar>
+      
+      <ion-label>Indeterminado reversa</ion-label>
+      <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+
+      <ion-label>Buffer</ion-label>
+      <ion-progress-bar color="malu" value="0.25" buffer="0.5"></ion-progress-bar>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Range
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-range pin="true"></ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range min="-200" max="200" color="dark">
+            <ion-label slot="start">-200</ion-label>
+            <ion-label slot="end">200</ion-label>
+          </ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range min="-100" max="100" step="2" color="danger">
+            <ion-icon size="small" slot="start" name="sunny"></ion-icon>
+            <ion-icon slot="end" name="sunny"></ion-icon>
+          </ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range min="-100" max="100" step="10" snaps="true" color="success">
+            <ion-label slot="start">-100</ion-label>
+            <ion-label slot="end">100</ion-label>
+          </ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range dualKnobs="true" min="-100" max="100" step="10" snaps="true" ticks="false" color="tertiary">
+            <ion-icon size="small" slot="start" name="planet"></ion-icon>
+            <ion-icon slot="end" name="planet"></ion-icon>
+          </ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range pin="true" min="3" max="30" step="3" snaps="true"></ion-range>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

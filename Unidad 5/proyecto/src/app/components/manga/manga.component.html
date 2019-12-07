@@ -1,0 +1,46 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>
+      <span class="anime-manga-index">{{ indice + 1 }}. </span>
+      <span class="anime-manga-subtype ion-text-capitalize">{{ manga.attributes.subtype }}</span>
+      <div class="anime-manga-more">
+        <ion-button fill="clear" (click)="abrirMenu()">
+          <ion-icon slot="icon-only" name="more"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-subtitle>
+    <ion-card-title (click)="abrirManga()">
+      {{ manga.attributes.titles.en_jp || manga.attributes.titles.en
+         || manga.attributes.titles.ja_jp || manga.attributes.titles.en_us 
+         || manga.attributes.titles.en_cn || manga.attributes.titles.zh_cn }}
+    </ion-card-title>
+  </ion-card-header>
+  <ion-img *ngIf="manga.attributes.posterImage.original" (click)="abrirManga()"
+  [src]="manga.attributes.posterImage.original">
+  </ion-img>
+  <ion-card-content>
+    <div class="ion-text-capitalize">
+      <b>Status: </b>{{ manga.attributes.status }}
+    </div>
+    <div *ngIf="manga.attributes.chapterCount !== null">
+      <b>Chapters: </b>{{ manga.attributes.chapterCount }}
+    </div>
+    <div *ngIf="manga.attributes.volumeCount !== null">
+      <b>Volumes: </b>{{ manga.attributes.volumeCount }}
+    </div>
+    <div>
+      <b>Start Date: </b>{{ manga.attributes.startDate }}
+    </div>
+    <div *ngIf="manga.attributes.endDate === null"></div>
+    <div *ngIf="manga.attributes.endDate !== null">
+      <b>End Date: </b>{{ manga.attributes.endDate }}
+    </div>
+    <br>
+    <div *ngIf="manga.attributes.synopsis !== null">
+      <b>Synopsis:</b>
+    </div>
+    <div *ngIf="manga.attributes.synopsis !== null">
+      {{ manga.attributes.synopsis }}
+    </div>
+  </ion-card-content>
+</ion-card>

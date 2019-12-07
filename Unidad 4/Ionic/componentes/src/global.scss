@@ -1,0 +1,104 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* MIS ESTILOS */
+/*Colores*/
+$fondo: #f7f7f7;
+$fondo_dark: #8f8f8f;
+$borde: #dddddd;
+$borde_dark: #555555;
+:root {
+    --ion-color-malu: #008080;
+    --ion-color-malu-rgb: 0,128,128;
+    --ion-color-malu-contrast: #ffffff;
+    --ion-color-malu-contrast-rgb: 255,255,255;
+    --ion-color-malu-shade: #007171;
+    --ion-color-malu-tint: #1a8d8d;
+}
+.ion-color-malu {
+    --ion-color-base: var(--ion-color-malu);
+    --ion-color-base-rgb: var(--ion-color-malu-rgb);
+    --ion-color-contrast: var(--ion-color-malu-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-malu-contrast-rgb);
+    --ion-color-shade: var(--ion-color-malu-shade);
+    --ion-color-tint: var(--ion-color-malu-tint);
+}
+/*Clases*/
+.grid-col {
+    background-color: $fondo;
+    border: solid 1px $borde;
+    padding: 10px;
+    margin: 5px;
+}
+.fondo {
+    background-color: $fondo;
+    border: solid 1px $borde;
+    margin-bottom: 15px;
+}
+.borde {
+    padding-right: 5px;
+    border-right: solid 1px $borde_dark;
+}
+.custom-loading {
+    --background: rgb(107, 189, 134);
+    --spinner-color: #001986;
+}
+.my-custom-menu {
+  --width: 500px;
+}
+.modal-col{
+    background-color: $fondo;
+    border: solid 1px $borde;
+}
+.img-slide {
+    width: 450px;
+    height: 450px;
+    border: solid 5px $borde_dark;
+}
+.tabs {
+    background-color: $fondo_dark;
+    border: solid 3px $borde_dark;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+/*Selectores*/
+ion-slide {
+    padding-bottom: 20px;
+}
+
+ion-slide ion-col h1 {
+    background-color: $fondo;
+    border: solid 1px $borde;
+    width: 450px;
+}
+ion-router-outlet {
+    background-color: $fondo;
+}
+ion-router-outlet h3 {
+    text-align: center;
+}

@@ -11,78 +11,203 @@
 <body>
     <!--Header-->
     <header>
-        <div class="container cabecera">
+        <div class="container">
             <!--Fila logo-->
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-content-center d-flex">
                 <div class="col-auto">
                     <a href="">
-                        <img src="img/bsd.png" alt="Bungou Stray Dogs">
+                        <img src="img/bsd.png" alt="Bungou Stray Dogs" class="logo">
                     </a>
                 </div>
             </div>
-            <!--Fila navegador-->
-            <nav class="row justify-content-center d-xs-none">
-                <div class="col-2 dropdown">
-                    <button class="btn dropdown-toggle boton" type="button" data-toggle="dropdown">
+            <!--Fila navegador 1-->
+            <nav class="row justify-content-between d-none d-sm-none d-md-block cabecera">
+                <div class="col-2 dropdown btn-group order-md-1">
+                    <button class="btn boton" type="button">
                         MANGA
                     </button>
-                    <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Capítulos</a>
-                    </div>
                 </div>
-                <div class="col-2 dropdown">
-                    <button class="btn dropdown-toggle boton" type="button" data-toggle="dropdown">
+                <div class="col-2 dropdown btn-group order-md-2">
+                    <button class="btn boton" type="button">
                         ANIME
                     </button>
-                    <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Episodios</a>
-                    </div>
                 </div>
-                <div class="col-2 dropdown">
+                <div class="col-2 dropdown btn-group order-md-3">
                     <button class="btn dropdown-toggle boton" type="button" data-toggle="dropdown">
                         NOVELAS
                     </button>
                     <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Examen de Ingreso de Osamu Dazai</a>
-                        <a href="" class="dropdown-item">Osamu Dazai y la Era Oscura</a>
-                        <a href="" class="dropdown-item">BEAST - Akutagawa Blanco, Atsushi Negro</a>
-                        <a href="" class="dropdown-item">Dazai, Chūya, Quince Años</a>
+                        <a href="" class="dropdown-item menuitem">Examen de Ingreso de Osamu Dazai</a>
+                        <a href="" class="dropdown-item menuitem">Osamu Dazai y la Era Oscura</a>
+                        <a href="" class="dropdown-item menuitem">BEAST - Akutagawa Blanco, Atsushi Negro</a>
+                        <a href="" class="dropdown-item menuitem">Dazai, Chūya, Quince Años</a>
                     </div>
                 </div>
-                <div class="col-2 dropdown">
+                <div class="col-2 dropdown btn-group order-md-4">
                     <button class="btn dropdown-toggle boton" type="button" data-toggle="dropdown">
                         EXTRAS
                     </button>
                     <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Bungou Stray Dogs Wan!</a>
-                        <a href="" class="dropdown-item">Gaiden</a>
+                        <a href="" class="dropdown-item menuitem">Bungou Stray Dogs Wan!</a>
+                        <a href="" class="dropdown-item menuitem">Gaiden</a>
                     </div>
                 </div>
-                <div class="col-2 dropdown">
-                    <button class="btn dropdown-toggle boton" type="button"data-toggle="dropdown">
+                <div class="col-2 dropdown btn-group order-md-5">
+                    <button class="btn dropdown-toggle boton" type="button" data-toggle="dropdown">
                         PERSONAJES
                     </button>
                     <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Agencia Armada de Detectives</a>
-                        <a href="" class="dropdown-item">Mafia Portuaria</a>
-                        <a href="" class="dropdown-item">El Gremio</a>
+                        <a href="" class="dropdown-item menuitem">Agencia Armada de Detectives</a>
+                        <a href="" class="dropdown-item menuitem">Mafia Portuaria</a>
+                        <a href="" class="dropdown-item menuitem">El Gremio</a>
+                    </div>
+                </div>
+            </nav>
+            <!--Fila navegador 2-->
+            <nav class="row justify-content-between d-block d-sm-block d-md-none cabecera">
+                <div class="col-3 dropdown btn-group order-md-1">
+                    <button class="btn boton" type="button">
+                        MANGA
+                    </button>
+                </div>
+                <div class="col-3 dropdown btn-group order-md-2">
+                    <button class="btn boton" type="button">
+                        ANIME
+                    </button>
+                </div>
+                <div class="col-3 dropdown btn-group order-md-3">
+                    <button class="btn dropdown-toggle boton" type="button" data-toggle="dropdown">
+                        NOVELAS
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item menuitem">Examen de Ingreso de Osamu Dazai</a>
+                        <a href="" class="dropdown-item menuitem">Osamu Dazai y la Era Oscura</a>
+                        <a href="" class="dropdown-item menuitem">BEAST - Akutagawa Blanco, Atsushi Negro</a>
+                        <a href="" class="dropdown-item menuitem">Dazai, Chūya, Quince Años</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-
     <!--Main-->
-
-    <!--Sección 1-->
-
-    <!--Sección 2-->
-
+    <main class="container">
+        <!--Contenido-->
+        <div class="row">
+            <!--Información-->
+            <div class="col-9 col-md-9 col-sm-12 info">
+                <h5 class="titulo">¿Qué es?</h5>
+                <p class="info-cont">
+                    Bungou Stray Dogs es una serie de manga <em>seinen</em> escrita por Kafka Asagiri e ilustrada por Sango Harukawa, que está siendo serializada en la revista <em>Young Ace</em> desde 2012, contando actualmente con 17 volúmenes. El manga se originó a partir de la idea de Kafka Asagiri de reunir a varios artistas famosos y dibujarlos como jóvenes adultos y adolescentes con poderes sobrenaturales. La serie se enfoca en un grupo de detectives que tienen múltiples poderes sobrenaturales y los utilizan en trabajos y encuentros con otras organizaciones.
+                    <br><br>
+                    Se han publicado múltiples novelas ligeras. Una adaptación de anime de Bones Inc. se emitió en 2016 en dos partes, la primera fue emitida entre el 7 de abril y el 23 de julio, y la segunda parte entre el 6 de octubre y el 22 de diciembre. Una película de anime, Bungou Stray Dogs: Dead Apple, se lanzó el 3 de marzo de 2018. Una tercera temporada de anime se emitió entre el 12 de abril y el 28 de junio de 2019.
+                </p>
+                <h5 class="titulo">Argumento</h5>
+                <p class="info-cont">
+                    La historia se centra en un joven adulto llamado Atsushi Nakajima. Después de haber sido expulsado de su orfanato, Atsushi detuvo accidentalmente el suicidio de un detective llamado Osamu Dazai creyendo que se estaba ahogando en el río. Durante sus interacciones con Dazai, Atsushi descubre que está dotado de una habilidad sobrenatural capaz de transformarlo en un tigre blanco berserker a la luz de la luna; esto hizo que el orfanato lo torturara y lo echara en el pasado.
+                    <br><br>
+                    Dazai lo recluta en la Agencia, y allí se encuentra con muchos otros usuarios de habilidades, ya que abordan varios casos y eventos que tienen lugar dentro de la ciudad de Yokohama, un lugar repleto de  personas con habilidades sobrenaturales. Atsushi se convierte en el objetivo de los miembros de Port Mafia, especialmente el ex alumno de Dazai, Ryūnosuke Akutagawa, ya que hay una recompensa por su cabeza en el mercado negro.
+                </p>
+                <h5 class="titulo">Personaje Destacado</h5>
+                <div class="row">
+                    <div class="col-3 col-md-4 d-none d-sm-none d-md-none d-lg-inline-block">
+                        <div class="carousel slide" id="posters" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#posters" data-slide-to="0" class="active"></li>
+                                <li data-target="#posters" data-slide-to="1"></li>
+                                <li data-target="#posters" data-slide-to="2"></li>
+                                <li data-target="#posters" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/chuya-manga.png" alt="Nakahara Chuuya Manga" class="d-block w-100 poster">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/chuya-anime.png" alt="Nakahara Chuuya Anime" class="d-block w-100 poster">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/chuya-15-bones.png" alt="Nakahara Chuuya Quince (Bones)" class="d-block w-100 poster">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/chuya-15-harukawa.png" alt="Nakahara Chuuya Quince (Harukawa)"
+                                        class="d-block w-100 poster">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-8 col-sm-12">
+                        <p class="info-personaje">
+                            <b>Chūya Nakahara (中原 中 也, Nakahara Chūya)</b> es miembro de la Mafia de Portuaria, así como el ex compañero de
+                            Dazai en Doble Negro. Es uno de los cinco ejecutivos de la Mafia Portuaria.
+                        </p>
+                        <p class="info-personaje">
+                            <b>Habilidad:</b> Por la Tristeza Manchada.
+                            <br>
+                            <b>Referencia:</b> Tristeza Contaminada, Nakahara Chūya (1907 - 1937).
+                        </p>
+                        <p class="info-personaje"><b>Actor de voz:</b> Kishou Taniyama.</p>
+                        <p class="info-personaje">
+                            <b>Manga:</b> Capítulo 10.
+                            <br>
+                            <b>Anime:</b> Episodio 9.
+                            <br>
+                            <b>Novela:</b> Dazai, Chūya, Quince Años.
+                        </p>
+                        <p class="info-personaje">
+                            <b>Chūya Nakahara, a Arthur Rimbaud:</b>
+                            <br>
+                            <em>
+                                "Por eso sellé ambas manos. Si hago eso, algún día llegará el momento en que perderé. El momento en que no disfruto de la pelea y me defiendo frenéticamente... Si lo hago, pensé que algún apego podría surgir en mí. Para el yo que no es más que un marco, para el yo que no es dueño de este cuerpo ".
+                            </em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Pósters horizontal-->
+            <div class="col-3 col-md-3 d-none d-md-inline-block poster-horizontal">
+                <h5 class="titulo">~Pósters~</h5>
+                <img src="img/poster1.jpg" alt="ADA" class="poster" id="posters">
+                <img src="img/poster2.jpg" alt="PM" class="poster" id="posters">
+                <img src="img/poster3.jpg" alt="TG" class="poster" id="posters">
+            </div>
+        </div>
+        <!--Pósters vertical-->
+        <div class="row justify-content-center">
+            <div class="col-auto d-block d-sm-block d-md-none">
+                <div class="row-1">
+                    <h5 class="titulo">~Pósters~</h5>
+                </div>
+                <div class="row-2">
+                    <div class="carousel slide" id="posters" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#posters" data-slide-to="0" class="active"></li>
+                            <li data-target="#posters" data-slide-to="1"></li>
+                            <li data-target="#posters" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/poster1.jpg" alt="ADA" class="d-block poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/poster2.jpg" alt="PM" class="d-block poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/poster3.jpg" alt="TG" class="d-block poster">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!--Footer-->
-    
-    
+    <footer class="align-bottom">
+        <p>Priscila Edith Gómez Rascón</p>
+        <p class="copyright">Bungou Stray Dogs © 2019</p>
+    </footer>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

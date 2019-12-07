@@ -1,0 +1,9 @@
+<app-header titulo="Refresher"></app-header>
+
+<ion-content padding>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)" (ionPull)="ionPull($event)" (ionStart)="ionStart($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Arrastra para refrescar" refreshingSpinner="bubbles" refreshingText="Refrescando...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-label>Arrastra hacia abajo para refrescar.</ion-label>
+</ion-content>

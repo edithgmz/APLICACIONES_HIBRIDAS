@@ -1,0 +1,11 @@
+<app-header titulo="Popover"></app-header>
+
+<ion-content padding>
+  <ion-button expand="block" (click)="presentPopover()">Popover Default</ion-button>
+  <br>
+  <ion-label *ngIf="datos" class="fondo">{{ datos }}</ion-label>
+  <br><br>
+  <ion-button (click)="presentPopoverPosition($event)">Popover Posición</ion-button>
+  <br><br>
+  <ion-label *ngIf="datosPosition">{{ datosPosition }}</ion-label>
+</ion-content>

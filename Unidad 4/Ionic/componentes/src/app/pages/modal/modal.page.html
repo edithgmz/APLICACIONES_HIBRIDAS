@@ -1,0 +1,7 @@
+<app-header titulo="Modal"></app-header>
+
+<ion-content padding>
+  <ion-button expand="block" (click)="presentModal()">Modal</ion-button>
+  <br>
+  <ion-label *ngIf="datos">Datos: {{ datos }}</ion-label>
+</ion-content>

@@ -1,0 +1,79 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+//Colores propios
+:root {
+  --ion-color-darkred: #800000;
+  --ion-color-darkred-rgb: 128,0,0;
+  --ion-color-darkred-contrast: #ffffff;
+  --ion-color-darkred-contrast-rgb: 255,255,255;
+  --ion-color-darkred-shade: #710000;
+  --ion-color-darkred-tint: #8d1a1a;
+}
+
+.ion-color-darkred {
+  --ion-color-base: var(--ion-color-darkred);
+  --ion-color-base-rgb: var(--ion-color-darkred-rgb);
+  --ion-color-contrast: var(--ion-color-darkred-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-darkred-contrast-rgb);
+  --ion-color-shade: var(--ion-color-darkred-shade);
+  --ion-color-tint: var(--ion-color-darkred-tint);
+}
+
+
+//Estilos propios
+.anime-manga-index{
+    color: var(--ion-color-darkred) !important;
+}
+
+.anime-manga-subtype{
+    font-size: 12px;
+    color: gray;
+}
+
+.anime-manga-more{
+    font-size: 25px !important;
+    position: absolute;
+    right: -10px;
+    top: -18px;
+}
+
+.anime-manga-more ion-button{
+    color: var(--ion-color-darkred);
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.tab-selected{
+    color: var(--ion-color-darkred) !important;
+}
+
+.ios .action-sheet-icon{
+    display: none !important;
+}

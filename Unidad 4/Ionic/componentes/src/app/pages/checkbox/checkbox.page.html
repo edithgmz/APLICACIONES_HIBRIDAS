@@ -1,0 +1,42 @@
+<app-header titulo="Checkbox"></app-header>
+
+<ion-content padding>
+  <h4>Default</h4>
+  <ion-checkbox></ion-checkbox>
+  
+  <h4>Deshabilitado</h4>
+  <ion-checkbox disabled="true"></ion-checkbox>
+  
+  <h4>Marcado</h4>
+  <ion-checkbox checked="true"></ion-checkbox>
+  
+  <h4>Colores</h4>
+  <ion-checkbox color="primary" checked="true"></ion-checkbox>
+  <ion-label>Primary </ion-label>
+  <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+  <ion-label>Secondary </ion-label>
+  <ion-checkbox color="tertiary" checked="true"></ion-checkbox>
+  <ion-label>Tertiary </ion-label>
+  <ion-checkbox color="success" checked="true"></ion-checkbox>
+  <ion-label>Success </ion-label>
+  <ion-checkbox color="warning" checked="true"></ion-checkbox>
+  <ion-label>Warning </ion-label>
+  <ion-checkbox color="danger" checked="true"></ion-checkbox>
+  <ion-label>Danger </ion-label>
+  <ion-checkbox color="light" checked="true"></ion-checkbox>
+  <ion-label>Light </ion-label>
+  <ion-checkbox color="medium" checked="true"></ion-checkbox>
+  <ion-label>Medium </ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+  <ion-label>Dark </ion-label>
+  <ion-checkbox color="malu" checked="true"></ion-checkbox>
+  <ion-label>Malu</ion-label>
+  
+  <h4>Lista</h4>
+  <ion-list>
+    <ion-item *ngFor="let p of personajes">
+      <ion-label>{{p.name}}</ion-label>
+      <ion-checkbox slot="start" [checked]="p.isChecked" [disabled]="p.isDisabled"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

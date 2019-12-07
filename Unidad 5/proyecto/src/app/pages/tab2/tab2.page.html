@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Kitsu Manga
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionChange)="search($event)" (ionCancel)="cancelSearch($event)"
+                 (ionClear)="cancelSearch($event)" showCancelButton="focus"
+                 placeholder="Manga..."></ion-searchbar>
+  <app-mangas *ngIf="buscar === ''" [mangas]="mangas"></app-mangas>
+  <app-mangas *ngIf="buscar !== ''" [mangas]="mangasName"></app-mangas>
+  <ion-infinite-scroll *ngIf="buscar === ''" threshold="150px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="crescent">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

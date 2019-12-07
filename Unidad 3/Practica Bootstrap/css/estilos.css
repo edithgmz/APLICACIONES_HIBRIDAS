@@ -1,19 +1,90 @@
 body{
-    background: #f7f7f7;
+    background: #dfdfdf;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
+    color: black;
 }
-
-/*HEADER*/
-.cabecera{
-    background: #cccccc;
-    margin-top: 10px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-}
-
-.boton{
+h6{
     font-weight: bold;
-    margin-top: 15px;
+    text-align: left;
+}
+/*HEADER*/
+header{ background: darkred }
+header .logo{ margin-top: 15px; }
+/*Navegador*/
+header .cabecera{ font-size: 18px; }
+header nav .boton{
+    font-weight: bold;
+    color: whitesmoke;
+    height: 40px;
+    align-items: space-between;
+}
+header nav .boton:hover{ color: black; }
+header nav .menuitem:hover{ background-color: #ffdddd; }
+header nav .menuitem:active{
+    color: black;
+    background-color: lightcoral;
+}
+/*MAIN*/
+main{ padding-top: 15px; }
+/*Contenido*/
+main .info{
+    border-radius: 5px 5px 0 0;
+    margin-top: 30px;
+    padding: 2px 2px 2px 2px;
+}
+main .info .titulo{
+    background: lightcoral;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+}
+main .info .info-cont{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+main .info .info-personaje{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+main .info .info-personaje p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+main .poster{
+    width: 250px;
+    height: 370px;
+}
+main #posters{
+    border: darkred 4px solid;
+    margin-bottom: 5px;
+    width: 250px;
+}
+main .poster-horizontal img{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+main .titulo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+main p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+/*Footer*/
+footer{ margin-top: 50px; }
+footer p{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0;
+}
+footer .copyright{
+    font-size: 12px;
+    color: #111111;
 }

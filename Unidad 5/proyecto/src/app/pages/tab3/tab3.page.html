@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Favoritos
+    </ion-title>
+  </ion-toolbar>
+  <ion-segment [(ngModel)]="favoritos" color="darkred" (ionChange)="changeSection($event)">
+    <ion-segment-button *ngFor="let sec of secciones" [value]="sec">
+      <ion-label class="ion-text-capitalize">{{ sec }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content [ngSwitch]="favoritos">
+  <!--Animes-->
+  <ion-content *ngSwitchCase="secciones[0]">
+    <ion-slides *ngIf="datalocalService.animes.length === 0" [options]="slideOpts">
+      <ion-slide>
+        <ion-label>No hay animes favoritos :(</ion-label>
+      </ion-slide>
+    </ion-slides>
+    <app-animes *ngIf="datalocalService.animes.length > 0" [animes]="datalocalService.animes"
+      [enFavoritos]="true">
+    </app-animes>
+  </ion-content>
+  <!--Mangas-->
+  <ion-content *ngSwitchCase="secciones[1]">
+    <ion-slides *ngIf="datalocalService.mangas.length === 0" [options]="slideOpts">
+      <ion-slide>
+        <ion-label>No hay mangas favoritos :(</ion-label>
+      </ion-slide>
+    </ion-slides>
+    <app-mangas *ngIf="datalocalService.mangas.length > 0" [mangas]="datalocalService.mangas"
+      [enFavoritos]="true">
+    </app-mangas>
+  </ion-content>
+</ion-content>

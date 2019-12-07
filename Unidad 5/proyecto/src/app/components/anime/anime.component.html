@@ -1,0 +1,47 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>
+      <span class="anime-manga-index">{{ indice + 1 }}. </span>
+      <span class="anime-manga-subtype ion-text-capitalize">{{ anime.attributes.subtype }}</span>
+      <div class="anime-manga-more">
+        <ion-button fill="clear" color="darkred" (click)="abrirMenu()">
+          <ion-icon slot="icon-only" name="more"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-subtitle>
+    <ion-card-title (click)="abrirAnime()">
+      {{ anime.attributes.titles.en_jp || anime.attributes.titles.en
+         || anime.attributes.titles.ja_jp || anime.attributes.titles.en_us 
+         || anime.attributes.titles.en_cn || anime.attributes.titles.zh_cn }}
+    </ion-card-title>
+  </ion-card-header>
+  <ion-img *ngIf="anime.attributes.posterImage.original" (click)="abrirAnime()"
+  [src]="anime.attributes.posterImage.original"></ion-img>
+  <ion-card-content>
+    <div class="ion-text-capitalize">
+      <b>Status: </b>{{ anime.attributes.status }}
+    </div>
+    <div *ngIf="anime.attributes.episodeCount !== null">
+      <b>Episodes: </b>{{ anime.attributes.episodeCount }}
+    </div>
+    <div>
+      <b>Start Date: </b>{{ anime.attributes.startDate }}
+    </div>
+    <div *ngIf="anime.attributes.endDate === null"></div>
+    <div *ngIf="anime.attributes.endDate !== null">
+      <b>End Date: </b>{{ anime.attributes.endDate }}
+    </div>
+    <br *ngIf="anime.attributes.youtubeVideoId !== null">
+    <ion-button *ngIf="anime.attributes.youtubeVideoId !== null" fill="outline" color="darkred" expand="full" size="small"
+    (click)="abrirAnimeTrailer()">
+      Trailer
+    </ion-button>
+    <br>
+    <div *ngIf="anime.attributes.synopsis !== null">
+      <b>Synopsis:</b>
+    </div>
+    <div *ngIf="anime.attributes.synopsis !== null">
+      {{ anime.attributes.synopsis }}
+    </div>
+  </ion-card-content>
+</ion-card>
